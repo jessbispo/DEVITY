@@ -1,3 +1,9 @@
 body {
     height: 3000px;
 }
+
+@media screen and (max-width: 540px) {
+    #mapa {
+        width: 300px;
+    }
+}
