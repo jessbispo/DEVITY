@@ -1,5 +1,5 @@
 body {
-    height: 3000px;
+    height: fit-content;
 }
 
 @media screen and (max-width: 540px) {
