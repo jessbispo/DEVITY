@@ -11,21 +11,29 @@ function cadastro() {
         let confirmaSenha = $('#confirmaSenha').val()
 
         if (email !== confirmaEmail) {
-            alert('Os endereços de email precisam ser estritamente iguais.')
+            $('#camposIguais').removeClass('d-none')
+            setTimeout(setAlert, 2000)      
         }
         if (senha !== confirmaSenha) {
-            alert('As senhas digitadas não estão idênticas')
+            $('#camposIguais').removeClass('d-none')
+            setTimeout(setAlert, 2000)      
         }
-    } comparaEmailESenha()
+    } 
+    comparaEmailESenha()
     
     function senhaForte() {
         let senha = $('#senha').val()
-        let span = $('span')
-        if (senha.length <= 7) {
-            span.append('Sua senha deve conter mais de 7 caracteres').style.addClass('px-3')
-        }
-    } senhaForte()
+        if (senha.length !== null && senha.length <= 7) {
+           $('#senhaForte').removeClass('d-none') 
+           setTimeout(setAlert, 2000)       
+        } 
+    } setTimeout(senhaForte, 4000) 
+}
+
+function setAlert(){
+    $('#senhaForte').addClass('d-none')     
+    $('#camposIguais').addClass('d-none')
 }
 
 //RG
-//CPF*/
+//CPF
