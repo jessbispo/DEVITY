@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'abril fatface';
+    src: url("/fonts/AbrilFatface-Regular.ttf");
+}
+
+
 body {
     height: fit-content;
 }
 
-@media screen and (max-width: 540px) {
-    #mapa {
-        width: 300px;
-    }
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 570px) {
+  
 }
