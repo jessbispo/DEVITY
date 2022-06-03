@@ -10,16 +10,14 @@
 </head>
 <body>
     <!--barra de navegação-->
-    <nav class="navbar navbar-expand-lg navbar-light " style="height: 15vh; background-color: #fafafa;">
-        <a class="navbar-brand" href="#">Navbar</a> <!--aqui vem o logo-->
+    <nav  class="navbar navbar-expand-lg navbar-light " style="height: 15vh; background-color: #F0E2E7;">
+        <a class="navbar-brand" href="#"></a> <!--aqui vem o logo-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a id="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+                
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +69,7 @@
             </a>
         </section>
 
-        <section class=" py-5 bg-light  text-center">
+        <section class=" py-5 text-center" style="background-color: #F0E2E7;">
             <div class="container">
                 <div>
                     <h1 class="py-5" style="font-family: 'Abril Fatface', cursive;" >PORQUE ASSINAR?</h1>
@@ -79,31 +77,32 @@
                 </div>
                 <div class="row py-5">
                     <div class="col-xl-4">
-                        <img style="width: 300px;" src="imgs/4.png" alt="image"> <!--criar logos ealterar em todos esses a, ref ubueditora-->
-                        <p>Atualmente adaptado para 8 linguagens de programação + linguagens de marcação e estilização.</p>
-                    </div>
-                    <div class="col-xl-4">
                         <img style="width: 300px;" src="imgs/5.png" alt="image">
                        
                         <p>Desenvolvido com o proposito de ajudar programadores que tenham alguma deficiencia visual, auxiliando na realização de tarefas do dia-a-dia.</p>
                     </div>
+                    <div class="col-xl-4">
+                        <img style="width: 300px;" src="imgs/4.png" alt="image"> <!--criar logos ealterar em todos esses a, ref ubueditora-->
+                        <p>Atualmente adaptado para 8 linguagens de programação + linguagens de marcação e estilização.</p>
+                    </div>
+                    
                     <div class="col-xl-4">
                         <img style="width: 300px;" src="imgs/6.png" alt="image">
                         
                         <p>Nosso produto passou por longos testes e temos orgulho de falar que foi aprovado por 100% dos usuarios que testaram.</p>
                     </div>  
                 </div>
-                <button id="assineBtn" class="btn btn-primary btn-lg" style="border-radius: 20px; width: 20%; background-color: #050a30 ">Assine agora</button>
+                <button id="assineBtn" class="btn btn-primary btn-lg" style="border-radius: 20px; width: fit-content; background-color: #050a30; font-family: 'abril fatface'; ">Assine agora</button>
             </div>
         </section>
 
 
-        <section id="carouselExampleControls" class="carousel slide d-flex flex-column text-dark py-5" style="height: 500px; background-color: #facfad;" data-ride="carousel"> <!--carrosel para review dos usuarios-->
+        <section id="carouselExampleControls" class="carousel slide d-flex flex-column text-dark py-5" style=" height: 500px; background-color:#fafafa;;" data-ride="carousel"> <!--carrosel para review dos usuarios-->
             <div class="text-center">
-                <p class="py-5 h2" style="font-family: 'Abril Fatface', cursive; color: black;"> Review de quem testou:</p>
+                <p class="py-5 h2" style="font-family: 'abril fatface'; color: black;">OPINIÃO DOS USUARIOS: </p>
             </div>
                 <div class="container d-flex justify-content-center"  style="color: black;">
-                    <div class="carousel-inner w-25">
+                    <div class="carousel-inner w-50">
                     <div class="carousel-item active">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui sit amet nulla sodales, nec convallis leo rhoncus. Quisque sodales blandit interdum. Pellentesque accumsan quis arcu eu pellentesque. Sed sagittis orci quis dolor rutrum hendrerit. Vivamus leo tellus, facilisis ac tincidunt ut, euismod non nunc. Sed pulvinar nibh diam, mollis posuere libero pretium convallis."</p>
                     </div>
@@ -117,18 +116,18 @@
                         <p>"Etiam aliquam felis erat, finibus sodales ante malesuada quis. Praesent placerat sem sit amet erat consectetur, vel pharetra nibh euismod. Donec ac magna justo. Donec tincidunt tortor a elementum consequat. Praesent et mi sagittis, interdum tortor molestie, iaculis arcu. Mauris molestie ut purus id imperdiet. Quisque sollicitudin nec eros quis rhoncus."</p>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                    <span class="sr-only" style="color: black;">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="color: black;">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>   
             </div>
         </section> 
 
-        <footer class="mx-0 px-0" style="background-color: #fafafa; color: black;">
+        <footer class="mx-0 px-0" style="background-color: #3F784C ; color: black;">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-3">
@@ -156,8 +155,8 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center" style="background-color: #facfad; color: black;">
-                <p> TODOS OS DIREITOS RESERVADOS @ SQUAD 9</p>
+            <div class="text-center py-1" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+                <p class="text-center"> TODOS OS DIREITOS RESERVADOS @ SQUAD 9</p>
             </div>
         </footer>
 
