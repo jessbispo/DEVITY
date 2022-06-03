@@ -1,6 +1,6 @@
 //redirecionando botoes da pagina inicial 
 
-let home = $('#home').on('click', ()=>{
+let logo = $('#logo').on('click', ()=>{
     location.assign("seila.html")
 })
 
