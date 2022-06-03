@@ -5,7 +5,8 @@
 
 
 body {
-    height: fit-content;
+    height: 400vh;
+
 }
 
 .carousel-control-next,
@@ -13,6 +14,8 @@ body {
     filter: invert(100%);
 }
 
-@media screen and (max-width: 570px) {
-  
+@media screen and (min-width: 990px) {
+  #assine {
+      width: 20vw;
+  }
 }
