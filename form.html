@@ -15,7 +15,7 @@
 <body class="background-e-fonte">
     <section class="container">
         <div class="col-md-6 offset-md-3">
-            <form class="text-center" id="form">
+            <form action="#" class="text-center" id="form">
                 <div class="form-group">
                     <div>
                         <h1>Cadastre-se</h1>
@@ -34,14 +34,14 @@
                 </div>
                 <div class="form-group">
                     <div class="mb-3 d-flex gap-2">
-                        <input type="email" placeholder="Email" class="w-50 col-6 px-3 py-2">
-                        <input type="email" placeholder="Confirmar email" class="w-50 col-6 px-3">
+                        <input type="email" pattern=".+.com" placeholder="Email" class="w-50 col-6 px-3 py-2" id="email">
+                        <input type="email" pattern=".+.com" placeholder="Confirmar email" class="w-50 col-6 px-3" id="confirmaEmail">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="mb-3 d-flex gap-2">
-                        <input type="password" placeholder="Senha" class="w-50 col-6 px-3 py-2">
-                        <input type="password" placeholder="Confirmar senha" class="w-50 col-6 px-3">
+                        <input type="password" placeholder="Senha" id="senha" class="w-50 col-6 px-3 py-2">
+                        <input type="password" placeholder="Confirmar senha" id="confirmaSenha" class="w-50 col-6 px-3">
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                 </div>
                 <div class="form-group">
                     <div class="mb-3 d-flex justify-content-center">
-                        <input type="button" value="Cadastrar" class="btn btn-dark text-center col-3 py-2">
+                        <button type="submit" class="btn btn-dark text-center col-3 py-2">Cadastrar</button>
                     </div>
                 </div>
         </div>
