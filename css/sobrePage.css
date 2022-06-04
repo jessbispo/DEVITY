@@ -1,0 +1,20 @@
+#sobre-titulo {
+    font-family: roboto;
+    font-weight: 900;
+}
+
+#sobre-missao-banner{
+    background-color: rgb(220 214 214);
+}
+
+.sobre-subtitulo {
+    font-family: roboto;
+}
+
+.sobre-paragrafo {
+    font-family: roboto;
+}
+
+.sobre-img {
+    width: 500px;
+}
