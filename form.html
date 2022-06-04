@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Página de cadastro</title>
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="cadastro.js" defer></script>
+    <script src="./js/script-bootstrap.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/cadastro.js" defer></script>
 </head>
 
 <body class="background-e-fonte">
@@ -48,8 +50,8 @@
 
                 <div class="form-group">
                     <div class="mb-3 d-flex gap-2">
-                        <input type="password" placeholder="RG" class="w-50 col-6 px-3 py-2">
-                        <input type="password" placeholder="CPF" class="w-50 col-6 px-3">
+                        <input type="text" placeholder="RG" id="rg" class="w-50 col-6 px-3 py-2">
+                        <input type="text" placeholder="CPF" id="cpf" class="w-50 col-6 px-3">
                     </div>
                 </div>
                 
@@ -57,7 +59,7 @@
                 <h5 class="d-flex mb-3">Endereço</h5>
 
                     <div class="mb-3 d-flex gap-2">
-                        <input type="text" placeholder="CEP"  id="cep" class="w-50 col-6 px-3 py-2">
+                        <input type="text" placeholder="CEP" id="cep" class="w-50 col-6 px-3 py-2 mask-cep">
                         <input type="text" placeholder="País" id="pais" class="w-50 col-6 px-3">    
                     </div>
                 </div>
