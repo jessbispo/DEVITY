@@ -4,9 +4,8 @@
 }
 
 
-body {
-    height: 400vh;
-
+html {
+    height: fit-content;
 }
 
 .carousel-control-next,
@@ -16,6 +15,6 @@ body {
 
 @media screen and (min-width: 990px) {
   #assine {
-      width: 20vw;
+      width: 10vw;
   }
 }
