@@ -13,3 +13,15 @@
       width: 10vw;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+    #rodape {
+        height: fit-content;
+    }
+
+    #divisaoRodape {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
