@@ -11,7 +11,15 @@
     font-family: 'Abril Fatface', cursive;
 }
 
-.alert {
+.alerta-vermelho {
+    padding: 19px 60px;
+    position: fixed;
+    top: 20px;
+    right: 105px;
+    color: black;
+}
+
+.alerta-azul {
     padding: 19px 60px;
     position: fixed;
     top: 20px;
