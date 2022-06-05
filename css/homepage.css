@@ -3,11 +3,6 @@
     src: url("/fonts/AbrilFatface-Regular.ttf");
 }
 
-#logo {
-    height: ;
-    width: ;
-}
-
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
