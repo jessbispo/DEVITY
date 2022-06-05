@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <title>Projeto final</title>
 </head>
 <body>
     <!--barra de navegação-->
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'abril fatface';">
-        <a class="navbar-brand" href="#"></a> <!--aqui vem o logo-->
+        <img id="logo" class="navbar-brand mx-0" src="assets/logo.png" alt="logo" style="height: 80px; width: fit-content;" > <!--aqui vem o logo-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +73,7 @@
         <section class=" py-5 text-center" style="background-color: #F0E2E7;">
             <div class="container">
                 <div>
-                    <h1 class="py-5" style="font-family: 'Abril Fatface', cursive;" >PORQUE ASSINAR?</h1>
+                    <h1 class="py-5" style="font-family: 'abril fatface'" >PORQUE ASSINAR?</h1>
                     <a class="d-block">Leitores de tela são programas que, interagindo com o Sistema Operacional do computador, capturam toda e qualquer informação apresentada na forma de texto e a transforma em uma resposta falada através de um sintetizador de voz. Mas o da (nome da empresa) é diferente, ja que focamos toda a nossa energia em construir um leitor de tela totalmente adaptado ao mundo da programção, trazendo acessibilidade para os proprios desenvolvedores. Algumas das nossas conquistas:</a>
                 </div>
                 <div class="row py-5">
@@ -105,7 +105,7 @@
                 <div class="container d-flex justify-content-center"  style="color: #F0E2E7;">
                     <div class="carousel-inner w-50">
                     <div class="carousel-item active">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend dui sit amet nulla sodales, nec convallis leo rhoncus. Quisque sodales blandit interdum. Pellentesque accumsan quis arcu eu pellentesque. Sed sagittis orci quis dolor rutrum hendrerit. Vivamus leo tellus, facilisis ac tincidunt ut, euismod non nunc. Sed pulvinar nibh diam, mollis posuere libero pretium convallis."</p>
+                        <p>"A sensação de utilizar um leitor de tela adaptado à minha necessidade foi incrivel, me senti acolhido, como se eu pertencesse verdadeiramente ao mundo da programação. Além do aumento na produtividade, ja que não precisava gastar tanto tempo adaptando a informação que o leitor passava"</p>
                     </div>
                     <div class="carousel-item">
                         <p>"Ut eleifend orci nibh, ultrices congue sapien semper et. Sed condimentum massa nec enim pulvinar, id scelerisque ipsum iaculis. Mauris laoreet porta egestas. Integer vel tellus sagittis, mattis nibh in, ultricies nibh. In nunc nunc, aliquet eget congue vel, facilisis at metus."</p>
@@ -158,9 +158,12 @@
                             </ul>
                         </div>
                         <div class="" style="width: 50%;"> 
-                            <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
-                            <input type="text " name="newsletter" placeholder="seu email">
+                            <form action="">
+                                <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                                <input id="newsletter" type="text " name="newsletter" placeholder="seu email">
                                 <button class="" style="background-color: #BE0E34; color:#F0E2E7 ">assinar</button>
+                            </form>
+                           
                         </div>
                     </div>        
                 </div>
@@ -170,7 +173,7 @@
             </div>
         </footer>
     </main>
-    <script type="text/javascript" src="js/script.js" defer></script>
+    <script type="text/javascript" src="js/homepage.js" defer></script>
     <script type="text/javascript" src="js/jquery-3.6.0.js" defer"></script>
     <script type="text/javascript" src="js/popper.min.js" defer></script> 
     <script type="text/javascript" src="js/bootstrap.js" defer></script>
