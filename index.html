@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>Projeto final</title>
+</head>
+<body>
+    <!--barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'abril fatface';">
+        <img id="logo" class="navbar-brand mx-0" src="assets/logo.png" alt="logo" style="height: 80px; width: fit-content;" > <!--aqui vem o logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="minhaConta" class="dropdown-item" href="seila.html">Minha conta</a>
+                <a id="planos" class="dropdown-item" href="#">Planos</a>
+                <a id="sobre" class="dropdown-item" href="#">Sobre Nós</a>
+                <div class="dropdown-divider"></div>
+                <a id="contato" class="dropdown-item" href="#">Contato</a>
+                </div>
+                </li>
+            </ul>
+            <div class="">
+                 <ul class="navbar-nav d-flex gap-5 ">
+                    <li class="nav-item active">
+                        <a id="login" class="nav-link" href="#">LOGIN</a>
+                    </li>
+                    <button id="assine" class="btn" style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;"  type="submit">ASSINE</button>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100"  src="assets/10.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-75"  src="assets/11.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 h-75" src="assets/12.png" alt="Third slide">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="color: black"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </section>
+
+        <section class=" py-5 text-center" style="background-color: #F0E2E7;">
+            <div class="container">
+                <div>
+                    <h1 class="py-5" style="font-family: 'abril fatface'" >PORQUE ASSINAR?</h1>
+                    <a class="d-block">Leitores de tela são programas que, interagindo com o Sistema Operacional do computador, capturam toda e qualquer informação apresentada na forma de texto e a transforma em uma resposta falada através de um sintetizador de voz. Mas o nosso screen-reader é diferente, ja que focamos toda a nossa energia em construir um leitor de tela totalmente adaptado ao mundo da programção, trazendo acessibilidade para os proprios desenvolvedores. Algumas das nossas conquistas:</a>
+                </div>
+                <div class="row py-5">
+                    <div class="col-xl-4">
+                        <img style="width: 300px;" src="assets/5.png" alt="image">
+                       
+                        <p>Desenvolvido com o proposito de ajudar programadores que tenham alguma deficiencia visual, auxiliando na realização de tarefas do dia-a-dia.</p>
+                    </div>
+                    <div class="col-xl-4">
+                        <img style="width: 300px;" src="assets/4.png" alt="image"> <!--criar logos ealterar em todos esses a, ref ubueditora-->
+                        <p>Atualmente adaptado para reconhecer linguagens de marcação, estilização e 8 linguagens de programação diferentes (JavaScript, Python, Java, PHP, C#, C++, Typescript e Ruby).</p>
+                    </div>
+                    
+                    <div class="col-xl-4">
+                        <img style="width: 300px;" src="assets/6.png" alt="image">
+                        
+                        <p>Nosso produto passou por longos testes e temos orgulho de falar que foi aprovado por 100% dos usuarios que testaram.</p>
+                    </div>  
+                </div>
+                <button id="assineBtn" class="btn btn-primary btn-lg" style="border-radius: 20px; width: 30%; background-color: #171810; color: #F0E2E7; font-family: 'abril fatface'; border-color: black; ">ASSINE</button>
+            </div>
+        </section>
+
+
+        <section id="carouselExampleControls" class="carousel slide d-flex flex-column text-dark py-5" style=" height: 500px; background-color:#BE0E34; color: #F0E2E7 ;" data-ride="carousel"> <!--carrosel para review dos usuarios-->
+            <div class="text-center">
+                <p class="py-4 h2" style="font-family: 'abril fatface'; color: #F0E2E7;">OPINIÃO DOS USUARIOS: </p>
+            </div>
+                <div class="container d-flex justify-content-center"  style="color: #F0E2E7;">
+                    <div class="carousel-inner w-50">
+                    <div class="carousel-item active">
+                        <p>"A sensação de utilizar um leitor de tela adaptado à minha necessidade foi incrivel, me senti acolhido, como se eu pertencesse verdadeiramente ao mundo da programação. Além do aumento na produtividade, ja que não precisava gastar tanto tempo adaptando a informação que o leitor passava"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Ut eleifend orci nibh, ultrices congue sapien semper et. Sed condimentum massa nec enim pulvinar, id scelerisque ipsum iaculis. Mauris laoreet porta egestas. Integer vel tellus sagittis, mattis nibh in, ultricies nibh. In nunc nunc, aliquet eget congue vel, facilisis at metus."</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Mauris vestibulum dolor id enim gravida tristique. Vivamus non arcu sit amet lectus mattis posuere sed aliquet massa. Nunc sollicitudin, augue et posuere condimentum, ipsum erat ullamcorper tellus, et semper purus est id nisi"</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Etiam aliquam felis erat, finibus sodales ante malesuada quis. Praesent placerat sem sit amet erat consectetur, vel pharetra nibh euismod. Donec ac magna justo. Donec tincidunt tortor a elementum consequat. Praesent et mi sagittis, interdum tortor molestie, iaculis arcu. Mauris molestie ut purus id imperdiet. Quisque sollicitudin nec eros quis rhoncus."</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+                    <span class="sr-only" style="color: black;">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="color: black;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>   
+            </div>
+        </section> 
+
+        <footer class="mx-0 px-0" style="background-color: #F0E2E7 ; color: black; ">
+            <div id="rodape" class="container py-5">
+                <div id="divisaoRodape" class="d-flex flex-wrap" style="font-size: 12px;">
+                    <div class="d-flex flex-" style="width: 500px;">
+                        <div class=" py-2" style="width: 50%;">
+                            <h4 class="h6">DEVITY</h4>
+                            <p style="width: 50%;">Nosso foco é prover uma solução efetiva e acessivel para desenvolvedores com algum tipo de deficiencia visual.</p>
+                        </div>
+                        <div class="py-2" style="width: 50%;">
+                            <h4 class="h6">LINKS UTEIS</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="" style="color: black;" disabled >HOME</a></li>
+                                <li><a href="" style="color: black;" >Produtos</a></li>
+                                <li><a href="" style="color: black;" >Planos</a></li>
+                                <li><a href="" style="color: black;" >Login</a></li>
+                                <li><a href="" style="color: black;" >Inscreva-se</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <div class="d-flex"  style="width: 500px;">
+                        <div class="" style="width: 50%;">
+                            <h4 class="h6 py-2">CONTATO</h4>
+                            <ul class="list-unstyled">
+                                <li><a class="link-dark" style="color: black;">devity</a></li>
+                                <li><a href="https://gmail.com/" class="link-dark" style="color: black;">devity@resilia.com</a></li>
+                                <li><a style="color: black;">telefone </a></li> <!--adicionar numero-->
+                            </ul>
+                        </div>
+                        <div class="" style="width: 50%;"> 
+                            <form action="">
+                                <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                                <input id="newsletter" type="text " name="newsletter" placeholder="seu email">
+                                <button class="" style="background-color: #BE0E34; color:#F0E2E7 ">assinar</button>
+                            </form>
+                           
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="text-center" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+                <p class="text-center m-0"> TODOS OS DIREITOS RESERVADOS @ DEVITY</p>
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript" src="js/homepage.js" defer></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.js" defer"></script>
+    <script type="text/javascript" src="js/popper.min.js" defer></script> 
+    <script type="text/javascript" src="js/bootstrap.js" defer></script>
+</body>
+</html>
