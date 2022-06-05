@@ -1,3 +1,4 @@
+
 #sobre-titulo {
     font-family: roboto;
     font-weight: 900;
@@ -18,3 +19,11 @@
 .sobre-img {
     width: 500px;
 }
+
+#Banner-Sobre {
+    height: 100vh;
+}
+
+
+
+
