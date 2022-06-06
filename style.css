@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,7 +11,8 @@
     font-family: 'Abril Fatface', cursive;
 }
 
-.alerta-vermelho, .alerta-azul, .alert-submit {
+.alerta,
+.alert-submit {
     position: fixed;
     top: 1rem;
     right: 20%;

@@ -27,10 +27,10 @@ function cadastro() {
             return
         }
         else if (senha.length <= 7) {
-           $('#senhaForte').removeClass('d-none')
-           setTimeout(setAlert, 2000)
+            $('#senhaForte').removeClass('d-none')
+            setTimeout(setAlert, 2000)
         }
-    } setTimeout(senhaForte,2000)
+    } setTimeout(senhaForte, 2000)
 }
 
 $(document).ready(function () {
@@ -41,36 +41,42 @@ $(document).ready(function () {
     rg.mask('00.000.000-0')
 })
 
-
-
 $(document).ready(function () {
     $('#cep').blur(function () {
         let cepDigitado = $(this).val()
-    
-        $.get('https://viacep.com.br/ws/' + cepDigitado + '/json/', function (dados, status) {
-            if(status === 'success') {
-                console.log(dados, status)
-                $('#pais').val('Brasil').attr('readonly', 'true').attr('disabled', 'true')
-                $('#uf').val(dados.uf).attr('readonly', 'true').attr('disabled', 'true')
-                $('#cidade').val(dados.localidade).attr('readonly', 'true').attr('disabled', 'true')
-                $('#bairro').val(dados.bairro).attr('readonly', 'true').attr('disabled', 'true')
-                $('#rua').val(dados.logradouro).attr('readonly', 'true').attr('disabled', 'true')
-            } 
-            else {
-                console.log('error')
+        try {
+            if (cepDigitado.length === 8) {
+                $.get('https://viacep.com.br/ws/' + cepDigitado + '/json/', function (dados, status) {
+                    try {
+                        if (dados.erro !== 'true') {
+                            console.log(dados, status)
+                            $('#pais').val('Brasil').attr('readonly', 'true').attr('disabled', 'true')
+                            $('#uf').val(dados.uf).attr('readonly', 'true').attr('disabled', 'true')
+                            $('#cidade').val(dados.localidade).attr('readonly', 'true').attr('disabled', 'true')
+                            $('#bairro').val(dados.bairro).attr('readonly', 'true').attr('disabled', 'true')
+                            $('#rua').val(dados.logradouro).attr('readonly', 'true').attr('disabled', 'true')
+                        }
+                        else {
+                            throw new Error('CEP inválido')
+                        }
+                    } catch (e) {
+                        console.log(e)
+                        $('#cepInvalido').removeClass('d-none')
+                    }
+                })
+            } else {
+                throw new Error('Seu CEP precisa ter 8 caracteres')
             }
-        })// else if (dados.)
-    
+        } catch (e) {
+            $('#cepPequeno').removeClass('d-none')
+        }
+
+
     })
 })
 
-function setAlert(){
-$('#senhaForte').addClass('d-none')
-$('#camposIguaisEmail').addClass('d-none')
-$('#camposIguaisSenha').addClass('d-none')
+function setAlert() {
+    $('#senhaForte').addClass('d-none')
+    $('#camposIguaisEmail').addClass('d-none')
+    $('#camposIguaisSenha').addClass('d-none')
 }
-
-//TODOS os alerts com problema
-//tratativa de erro de requisição
-//trativa de erro se algum campo for 0
-//finalização (função que coloca tudo junto e manda alert de cadastrado)
