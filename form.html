@@ -5,60 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <title>Página de cadastro</title>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/script-bootstrap.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/cadastro.js" defer></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js" defer></script>
+    <script src="js/popper.min.js"></script> 
+    <script src="./js/script-bootstrap.js"></script>
 </head>
 
-<body class="background-e-fonte">
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'abril fatface';">
-        <a class="navbar-brand" href="#"></a>
-        <!--aqui vem o logo-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body class="background">
+    <nav class="navbar navbar-expand-lg bg-light fonte">
+        <div class="container-fluid">
+          <img src="/assets/logo.png" alt="Logo da empresa" style="height: 80px; width: fit-content;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Menu</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a id="minhaConta" class="dropdown-item" href="seila.html">Minha conta</a>
-                        <a id="planos" class="dropdown-item" href="#">Planos</a>
-                        <a id="sobre" class="dropdown-item" href="#">Sobre Nós</a>
-                        <div class="dropdown-divider"></div>
-                        <a id="contato" class="dropdown-item" href="#">Contato</a>
-                    </div>
-                </li>
-            </ul>
-            <div class="">
-                <ul class="navbar-nav d-flex gap-5 ">
-                    <li class="nav-item active">
-                        <a id="login" class="nav-link" href="#">LOGIN</a>
-                    </li>
-                    <button id="assine" class="btn"
-                        style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;"
-                        type="submit">ASSINE</button>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Minha Conta</a></li>
+                  <li><a class="dropdown-item" href="#">Planos</a></li>
+                  <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contato</a></li>
                 </ul>
-
+              </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav d-flex gap-5 ">
+                   <li class="nav-item active">
+                       <a id="login" class="nav-link" href="#">LOGIN</a>
+                   </li>
+                </ul>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <section class="container">
+    <section class="container fonte">
         <div class="col-md-6 offset-md-3">
             <form action="#" class="text-center" id="form">
                 <div class="form-group">
                     <div>
                         <h1>Cadastre-se</h1>
                         <p>Garanta o seu acesso em primeira mão! Realize o cadastro agora e passe a fazer parte
-                            automaticamente da fila
-                            de espera.
+                            automaticamente da fila de espera.
                         </p>
                     </div>
                 </div>
@@ -121,7 +118,7 @@
                 </div>
                 <div class="form-group">
                     <div class="mb-3 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-dark text-center col-3 py-2">Cadastrar</button>
+                        <button type="submit" class="btn btn-dark text-center col-3 py-6">Cadastrar</button>
                     </div>
                 </div>
 
@@ -154,6 +151,51 @@
         </div>
         </form>
     </section>
+
+    <footer class="mx-0 px-0 text-center" style="background-color: #F0E2E7;">
+        <div id="rodape" class="container py-5">
+            <div id="divisaoRodape" class="d-flex flex-wrap justify-content-center" style="font-size: 12px;">
+                <div class="d-flex flex-wrap" style="width: 500px;">
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">DEVITY</h4>
+                        <p class="d-flex justify-content-center px-5">Nosso foco é prover uma solução efetiva e acessivel para desenvolvedores com algum tipo de deficiencia visual.</p>
+                    </div>
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">LINKS UTEIS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="" class="text-decoration-none" style="color: black;" disabled >HOME</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Planos</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Login</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Produtos</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+                </div> 
+
+                <div class="d-flex"  style="width: 500px;">
+                    <div class="" style="width: 50%;">
+                        <h4 class="h6 py-2">CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a style="color: black;">devity</a></li>
+                            <li><a href="https://gmail.com/" class="link-dark" style="color: black;">devity@resilia.com</a></li>
+                            <li><a style="color: black;">telefone </a></li> 
+                        </ul>
+                    </div>
+                    <div style="width: 50%;"> 
+                        <form>
+                            <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                            <input class="py-1 px-1" id="newsletter" type="text " name="newsletter" placeholder="seu email">
+                            <button class="px-2 py-1" style="background-color: #BE0E34; color:#F0E2E7; border: none">assinar</button>
+                        </form>
+                       
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="text-center" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+            <p class="text-center m-0 py-2">TODOS OS DIREITOS RESERVADOS @DEVITY</p>
+        </div>
+    </footer>
 
 </body>
 
