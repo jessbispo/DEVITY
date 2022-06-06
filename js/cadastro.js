@@ -1,6 +1,6 @@
 let form = $('#form').submit((event) => {
     event.preventDefault()
-    $('#alertSubmit').removeClass('d-none')
+   //$('#alertSubmit').removeClass('d-none')
     return cadastro()
 })
 
@@ -13,11 +13,11 @@ function cadastro() {
 
         if (email !== confirmaEmail) {
             $('#camposIguaisEmail').removeClass('d-none')
-            setTimeout(setAlert, 2000)
+            setTimeout(setAlert, 4000)
         }
         if (senha !== confirmaSenha) {
             $('#camposIguaisSenha').removeClass('d-none')
-            setTimeout(setAlert, 2000)
+            setTimeout(setAlert, 4000)
         }
     }
     comparaEmailESenha()
@@ -28,9 +28,9 @@ function cadastro() {
         }
         else if (senha.length <= 7) {
             $('#senhaForte').removeClass('d-none')
-            setTimeout(setAlert, 2000)
+            setTimeout(setAlert, 4000)
         }
-    } setTimeout(senhaForte, 2000)
+    } setTimeout(senhaForte, 12000)
 }
 
 $(document).ready(function () {
