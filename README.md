@@ -91,8 +91,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## **Se conecte com os colaboradores**;  
 
 - [Jessica Bispo](https://github.com/jessbispo)
-- [Jaque](https://github.com/jackiesantos)
+- [Jaque](https://github.com/Jackiesants)
 - [Kelly](https://github.com/kellysanttos)
-- [Isadora](https://github.com/isadora)
+- [Isadora](https://github.com/isadoraraujo)
 
 
