@@ -26,3 +26,23 @@
         width: 50%;
     }
   }
+
+  @media screen and (max-width: 620px) {
+    #carrosel {
+        height: 550px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    #carrosel {
+        height: 700px;
+    }
+    #assineBtn {
+        width: 20vw;
+        background-color: aliceblue;
+    }
+  }
+
+
+
+  
