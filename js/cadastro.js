@@ -1,15 +1,26 @@
 let form = $('#form').submit((event) => {
     event.preventDefault()
-   //$('#alertSubmit').removeClass('d-none')
     return cadastro()
 })
 
+$('#newsletter').blur(function () {
+    let testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+.)+[A-Z]{2,4}$/i;
+
+    if (testEmail.test(this.value)) {
+        return true
+    }
+    else {
+        alert("Email invalido")
+    }
+});
+
 function cadastro() {
+    let email = $('#email').val()
+    let confirmaEmail = $('#confirmaEmail').val()
+    let senha = $('#senha').val()
+    let confirmaSenha = $('#confirmaSenha').val()
+
     function comparaEmailESenha() {
-        let email = $('#email').val()
-        let confirmaEmail = $('#confirmaEmail').val()
-        let senha = $('#senha').val()
-        let confirmaSenha = $('#confirmaSenha').val()
 
         if (email !== confirmaEmail) {
             $('#camposIguaisEmail').removeClass('d-none')
@@ -30,7 +41,11 @@ function cadastro() {
             $('#senhaForte').removeClass('d-none')
             setTimeout(setAlert, 4000)
         }
-    } setTimeout(senhaForte, 12000)
+    } setTimeout(senhaForte, 4000)
+
+    if (email === confirmaEmail && senha === confirmaSenha && senha.length > 7) {
+        $('#alertSubmit').removeClass('d-none')
+    }
 }
 
 $(document).ready(function () {
