@@ -1,4 +1,4 @@
-# PROJETO-FINAL
+# DEVITY
 
 
 
@@ -10,9 +10,9 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/jessbispo/PROJETO-FINAL?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/jessbispo/PROJETO-FINAL?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="assets/homepage.png" alt="imagem">
 
-> Projeto final do módulo 2, em que utilizamos jQuery, Javascript, Bootstrap e request em API para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia..
+> Projeto final do módulo 2, em que utilizamos HTML, CSS, Javascript, jQuery, Bootstrap e API's para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia, e a nossa escolha de produto foi um leitor de tela próprio para o mundo da programação, 
 
 <br>
 
@@ -45,7 +45,11 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
+<<<<<<< HEAD
         <img src="Jessica-foto.jpeg" width="100px;" alt="Foto Jessica"/><br>
+=======
+        <img src="assets/Jessica-foto.jpeg" width="100px;" alt="Foto Jessica"/><br>
+>>>>>>> 0b10cccd9ea4ea9aa842b4ae8fe0746524c47f83
         <sub>
           <b>Jessica Bispos</b>
         </sub>
@@ -53,7 +57,11 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
+<<<<<<< HEAD
         <img src="Kelly-foto.jpeg" alt="Foto Kelly"/><br>
+=======
+        <img src="assets/Kelly-foto.jpeg"  width="100px;" alt="Foto Kelly"/><br>
+>>>>>>> 0b10cccd9ea4ea9aa842b4ae8fe0746524c47f83
         <sub>
           <b>Kelly</b>
         </sub>
@@ -61,7 +69,11 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
+<<<<<<< HEAD
         <img src="Jaque-foto.jpeg" width="100px;" alt="Foto Jaque"/><br>
+=======
+        <img src="assets/Jaque-foto.jpeg" width="100px;" alt="Foto Jaque"/><br>
+>>>>>>> 0b10cccd9ea4ea9aa842b4ae8fe0746524c47f83
         <sub>
           <b>Jaque</b>
         </sub>
@@ -69,7 +81,11 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
      <td align="center">
       <a href="#">
+<<<<<<< HEAD
         <img src="Isadora-foto.jpeg" width="100px;" alt="Foto Isadora"/><br>
+=======
+        <img src="assets/Isadora-foto.png" width="100px;" alt="Foto Isadora"/><br>
+>>>>>>> 0b10cccd9ea4ea9aa842b4ae8fe0746524c47f83
         <sub>
           <b>Isadora</b>
         </sub>
@@ -91,8 +107,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## **Se conecte com os colaboradores**;  
 
 - [Jessica Bispo](https://github.com/jessbispo)
-- [Jaque](https://github.com/jackiesantos)
+- [Jaque](https://github.com/Jackiesants)
 - [Kelly](https://github.com/kellysanttos)
-- [Isadora](https://github.com/isadora)
+- [Isadora](https://github.com/isadoraraujo)
 
 

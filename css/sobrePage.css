@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+  
+}
+
+.escondido {
+    display: none!important;
+}
+
+
+h2, h3 {
+    font-family: 'Abril Fatface', 'roboto';
+}
+
+.sobre-paragrafo {
+    font-family: "segoi ui", "roboto";
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.sobre-img {
+    min-width: 200px;
+    border-radius: 130px;
+}
+
+#banner-container {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+#banner-sobre{
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/Banner%20Vermelho-branco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 600px)
+{
+    #banner-container {
+        height: 90vh;
+        
+    }
+   
+}
+
+@media (max-width: 800px)
+{
+    .equipe-desc
+   {
+       display: block!important;
+   }
+    
+    .equipe-desc img {
+        width: 150px;
+        margin: auto;
+    }
+    
+    .equipe-desc p {
+        width: 100%;
+        text-align: center;
+        margin: 5%;
+    }
+    
+     
+    .visivel {
+        display: none!important;
+    }
+    
+    .escondido {
+        display: visible!important;
+    } 
+    #banner-sobre {
+    height: 80vh;
+    background-image: url("../assets/Banner-vermelho-Branco-resp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+        
+    }
+   
+}
+
+
+
