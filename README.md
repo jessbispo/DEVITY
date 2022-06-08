@@ -69,7 +69,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
      <td align="center">
       <a href="#">
-        <img src="Isadora-foto.jpeg" width="100px;" alt="Foto Isadora"/><br>
+        <img src="Isadora-foto.png" width="100px;" alt="Foto Isadora"/><br>
         <sub>
           <b>Isadora</b>
         </sub>
