@@ -45,7 +45,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        
+
         <img src="assets/Jessica-foto.jpeg" width="100px;" alt="Foto Jessica"/><br>
 
         <sub>
