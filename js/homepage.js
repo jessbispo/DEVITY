@@ -11,3 +11,14 @@ $('#newsletter').blur(function() {
     }
 });
 
+let botao = $('#assine').on('click',() => {
+  location.assign("pages/form.html")
+})
+
+let botaoPage = $('#assineBtn').on('click',() => {
+  location.assign("pages/login.html")
+})
+
+let logo = $('#logo').on('click',() => {
+  location.assign("index.html")
+})
