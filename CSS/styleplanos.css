@@ -4,6 +4,11 @@
     font-family: 'Abril Fatface', cursive;
  }
 
+ .container-fluid {
+     margin-top: -6.8px;
+     background-color: #F0E2E7;
+ }
+
 .products {
     width: 100%;
     font-family: 'Abril Fatface', cursive;
@@ -14,7 +19,7 @@
 .imagem {
     height: auto;
     width: 680px;
-    margin-left: -90px;
+    margin-left: -60px;
     
 }
 

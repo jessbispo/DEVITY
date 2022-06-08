@@ -4,6 +4,11 @@ nav {
     font-family: 'Abril Fatface', cursive;
 }
 
+.container-fluid {
+    background-color: #F0E2E7;
+    margin-top: -6.8px;
+}
+
 body {
     margin: 0;
     padding: 0;
