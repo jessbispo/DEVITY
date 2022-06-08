@@ -16,7 +16,7 @@ let botao = $('#assine').on('click',() => {
 })
 
 let botaoPage = $('#assineBtn').on('click',() => {
-  location.assign("pages/login.html")
+  location.assign("pages/form.html")
 })
 
 let logo = $('#logo').on('click',() => {
