@@ -53,7 +53,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="assets/Kelly-foto.jpeg" alt="Foto Kelly"/><br>
+        <img src="assets/Kelly-foto.jpeg"  width="100px;" alt="Foto Kelly"/><br>
         <sub>
           <b>Kelly</b>
         </sub>
