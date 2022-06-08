@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>DEVITY - Cadastro</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/fav-removebg-preview.png">
+    <script src="./js/cadastro.js" defer></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js" defer></script>
+    <script src="js/popper.min.js"></script> 
+    <script src="./js/script-bootstrap.js"></script>
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-expand-lg fonte" style="background-color: #F0E2E7;">
+        <div class="container-fluid">
+          <img src="/assets/logo.png" alt="Logo da empresa" style="height: 80px; width: fit-content;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Minha Conta</a></li>
+                  <li><a class="dropdown-item" href="#">Planos</a></li>
+                  <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contato</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav d-flex gap-5 ">
+                   <li class="nav-item active">
+                       <a id="login" class="nav-link" href="#">LOGIN</a>
+                   </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <section class="container fonte" style="background-color: white; margin-top: 1.5rem; margin-bottom: 1.5rem; padding: 1rem;">
+        <div class="col-md-6 offset-md-3">
+            <form action="#" class="text-center" id="form">
+                <div class="form-group">
+                    <div>
+                        <h1>Cadastre-se</h1>
+                        <p>Garanta o seu acesso em primeira mão! Realize o cadastro agora e passe a fazer parte
+                            automaticamente da fila de espera.
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h5 class="d-flex mb-3">Dados pessoais</h5>
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="Nome" class="w-50 col-6 px-3 py-2" required>
+                        <input type="text" placeholder="Sobrenome" class="w-50 col-6 px-3" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="email" pattern=".+.com" placeholder="Email" class="w-50 col-6 px-3 py-2" id="email"
+                            required>
+                        <input type="email" pattern=".+.com" placeholder="Confirmar email" class="w-50 col-6 px-3"
+                            id="confirmaEmail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="password" placeholder="Senha" id="senha" class="w-50 col-6 px-3 py-2" required>
+                        <input type="password" placeholder="Confirmar senha" id="confirmaSenha" class="w-50 col-6 px-3"
+                            required>
+                    </div>
+                    <span></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="RG" id="rg" class="w-50 col-6 px-3 py-2" required>
+                        <input type="text" placeholder="CPF" id="cpf" class="w-50 col-6 px-3" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h5 class="d-flex mb-3">Endereço</h5>
+
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="CEP" id="cep" class="w-50 col-6 px-3 py-2 mask-cep" required>
+                        <input type="text" placeholder="País" id="pais" class="w-50 col-6 px-3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="Estado" id="uf" class="w-50 col-6 px-3 py-2">
+                        <input type="text" placeholder="Cidade" id="cidade" class="w-50 col-6 px-3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="Bairro" id="bairro" class="col-6 px-3 py-2">
+                        <input type="text" placeholder="Rua" id="rua" class="col-6 px-3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="text" placeholder="Complemento" class="w-50 col-6 px-3 py-2">
+                        <input type="text" placeholder="Nº" class="w-50 col-6 px-3" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dark text-center col-3 py-6">Cadastrar</button>
+                    </div>
+                </div>
+
+                <div class="d-none alert alerta" role="alert" id="camposIguaisEmail" style="background-color: #B20D30;">
+                    Os campos do email precisam ser preenchidos de forma idêntica.
+                </div>
+                <div class="d-none alert alerta" role="alert" id="camposIguaisSenha" style="background-color: #e7bf0e;">
+                    Os campos da senha precisam ser preenchidos de forma idêntica.
+                </div>
+
+                <div class="d-none alert alerta" role="alert" id="senhaForte" style="background-color: #3F84E5;">
+                    Por questões de segurança, você deve criar uma senha com no mínimo 8 caracteres.
+                </div>
+
+                <div class="d-none alert alerta alert-warning" id="cepInvalido" role="alert">
+                    CEP inválido. Digite um CEP existente.
+                </div>
+
+                <div class="d-none alert alerta alert-warning" id="cepPequeno" role="alert">
+                    Um CEP válido necessita de 8 dígitos. Por favor, digite um CEP válido.
+                </div>
+
+                <div class="d-none alert alert-success alert-submit" role="alert" id="alertSubmit">
+                    <h4 class="alert-heading">Muito bem!</h4>
+                    <p>Estamos muito felizes por ter você conosco! Obrigada por estar ao nosso lado por uma onda
+                        tecnológica acessível.</p>
+                    <hr>
+                    <p class="mb-0">Em breve você receberá um email confirmando seu cadastro.</p>
+                </div>
+        </div>
+        </form>
+    </section>
+
+    <footer class="mx-0 px-0 text-center" style="background-color: #F0E2E7; color: black;">
+        <div id="rodape" class="container py-5">
+            <div id="divisaoRodape" class="d-flex flex-wrap justify-content-center" style="font-size: 12px;">
+                <div class="d-flex flex-wrap" style="width: 500px;">
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">DEVITY</h4>
+                        <p class="d-flex justify-content-center px-5">Nosso foco é prover uma solução efetiva e acessivel para desenvolvedores com algum tipo de deficiencia visual.</p>
+                    </div>
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">LINKS UTEIS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="" class="text-decoration-none" style="color: black;" disabled >HOME</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Planos</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Login</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Produtos</a></li>
+                            <li><a href="" class="text-decoration-none" style="color: black;">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+                </div> 
+
+                <div class="d-flex"  style="width: 500px;">
+                    <div class="" style="width: 50%;">
+                        <h4 class="h6 py-2">CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a style="color: black;">devity</a></li>
+                            <li><a href="https://gmail.com/" class="link-dark" style="color: black;">devity@resilia.com</a></li>
+                            <li><a style="color: black;">fale conosco: (82) 3156-2569</a></li> 
+                        </ul>
+                    </div>
+                    <div style="width: 50%;"> 
+                        <form>
+                            <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                            <input class="py-1 px-1" id="newsletter" type="text " name="newsletter" placeholder="seu email">
+                            <button class="px-2 py-1" style="color:#000000; border: none; background-color: #B20D30;">assinar</button>
+                        </form>
+                       
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="text-center" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+            <p class="text-center m-0 py-2">TODOS OS DIREITOS RESERVADOS @DEVITY</p>
+        </div>
+    </footer>
+
+</body>
+</html>
