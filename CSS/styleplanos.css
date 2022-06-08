@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+ nav {
+    font-family: 'Abril Fatface', cursive;
+ }
+
+ .container-fluid {
+    margin-top: -6.8px;
+    background-color: #F0E2E7;
+ }
+
+.products {
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+    padding: 3rem 0px;
+    background-color: #b20d30;
+}
+
+.imagem {
+    height: auto;
+    width: 680px;
+    margin-left: -60px;
+}
+
+.products-text {
+    width: 550px;
+}
+
+/*font-family: 'Abril Fatface', cursive;*/
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products-text h2 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.products-text p {
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+#botao {
+    background-color: #fff;
+    color: #b20d30;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+#botao:hover {
+    background-color: transparent;
+    border: 2px solid #ece9ea;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.containerum {
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Abril Fatface', cursive;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    color: #b20d30;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alterar {
+    margin-top: 2rem;
+    color: hsl(234, 14%, 74%);
+    display: flex;
+    align-items: center;
+}
+
+.alterar-btn {
+    margin: 0.1rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.sub {
+    background: #b20d30;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+
+
+.checkbox:checked + .sub {
+    justify-content: flex-end;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    color: hsl(233, 13%, 49%);
+    border-radius: 0.8rem;
+}
+
+.cards .card.active {
+    min-width: 320px;
+    max-height: 800px;
+    margin: auto;
+    background: #b20d30;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.listas {
+    margin: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.listas .bottom-bar {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 10px;
+}
+
+#basic {
+    font-size: 3rem;
+    color: hsl(233, 10%, 65%);
+    padding-bottom: 2rem;
+}
+
+.shadow {
+    box-shadow: -5px 5px 15px 1px rgba(0, 0, 0.1);
+}
+
+.card.active .price {
+    color: #fff;
+}
+
+.btn {
+    margin-top:1rem;
+    height: 2.6rem;
+    width: 13.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #b20d30;
+    color: #fff;
+    outline: none;
+    border: 0;
+    font-size: bold;
+}
+
+.active-btn {
+    background: #fff;
+    color: #b20d30;
+}
+
+.bottom-bar {
+    border-bottom: 2px solid hsl(240, 8%, 85%, 0.583);
+}
+
+.card.active .bottom-bar {
+    border-bottom: 2px solid hsl(240, 8%, 85%, 0.283);
+}
+
+.pack {
+    font-size: 1.7rem;
+}

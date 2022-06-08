@@ -1,54 +1,61 @@
 <html>
     
-    <head>
+     <head>
     
         <title> Projeto Final </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Bootstrap -->  
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-         <link href="../css/sobrePage.css" rel="stylesheet">
-        
+        <link href="../css/sobrePage.css" rel="stylesheet"> <!-- Import do CSS -->
+   
+            <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     
-</head>
+    </head>
 
     <body class="d-flex flex-column">
- <nav  class="navbar navbar-expand-lg navbar-light " style="height: ; background-color: #F0E2E7; font-family: 'abril fatface';">
-        <a class="navbar-brand" href="#"></a> <!--aqui vem o logo-->
+ <!--barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'Abril Fatface', cursive;">
+        <img id="logo" class="navbar-brand mx-0" src="../assets/logo.png" alt="logo" style="height: 80px; width: fit-content;" > <!--aqui vem o logo-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="minhaConta" class="dropdown-item" href="#">Minha conta</a>
+
+                <a id="produtos" class="dropdown-item" href="produto.html">Produto</a>
+
                 <a id="planos" class="dropdown-item" href="#">Planos</a>
-                <a id="sobre" class="dropdown-item" href="#">Sobre Nós</a>
+                <a id="sobre" class="dropdown-item" href="sobre.html">Sobre Nós</a>
                 <div class="dropdown-divider"></div>
                 <a id="contato" class="dropdown-item" href="#">Contato</a>
                 </div>
                 </li>
             </ul>
-            <div class="">
+            <div>
                  <ul class="navbar-nav d-flex gap-5 ">
                     <li class="nav-item active">
-                        <a id="login" class="nav-link" href="#">LOGIN</a>
+                        <a id="login" class="nav-link" href="login.html">LOGIN</a>
                     </li>
-                    <button id="assine" class="btn" style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;"  type="submit">ASSINE</button>
+                     <button id="assine" class="btn" style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;"  type="submit">ASSINE</button> 
                 </ul>
-                
+        
             </div>
         </div>
     </nav>
-        
+
         
         <main>
             <div class="conteiner h-100">
@@ -66,8 +73,49 @@
 
                 <div class="row d-flex justify-content-center align-items-center py-5 w-100">
                     <div class="col-12 col-sm-12 col-md-8">
-                        <h3 class="text-uppercase text-center py-4 sobre-subtitulo"> Quem somos? </h3>
+                        <h3 class="text-uppercase text-center py-4 sobre-subtitulo text-center"> Quem somos? </h3>
+                        
+                    </div>
+                </div>
+                
+                    <! -- SESSÃO SOBRE DA EMPRESA-->
+                        
+                        <section id="empresa-session-um vh-100" class="row">
+                           <div class="row w-100 vh-100" id="linha-um-empresa">
+                    
+                        
+                              <div class="col-6 h-100 d-flex flex-column justify-content-center align-items-center" id="cont-session-um" >
+                                <div> 
+                                    <h4 id="sessions-subtitulo" class="w-100 text-align-center"> A empresa: </h4>
+                                </div>
 
+                              <p id="empresa-desc-texto"> 
+                              A Devity é uma empresa focada não só no agora, mas também no futuro!  Nossa paixão por tecnologia começou em 2010, com produtos voltados completamente para facilitação tecnológica de novos desenvolvedores. Contudo, não foi difícil perceber que mesmo com toda a evolução na área, ainda havia extrema segregação de classes sociais distintas e dificuldades para conseguir fazer parte da área de TI. <br> Por conta disso, decidimos que era a hora de transicionar o nicho, focando em agregar diferenças e possibilidades ao meio tecnológicos. A Devity deixou de ser uma empresa que vendia tecnologia apenas, e passou a ser a empresa que desenvolve sonhos.
+                              </p>
+                              </div>
+                              
+                              <div class="col-6" id="img-session-um">
+                                <aside id="empresa-desc-img">
+                                </aside>
+                            
+                              </div>
+                           
+                            </div> 
+                    
+                        </section>
+              
+                                <div class="row d-flex justify-content-center align-items-center py-5 w-100">
+                                <div class="col-12 col-sm-12 col-md-8">
+                                    <h4 id="sessions-subtitulo" class="w-100 text-align-center"> A equipe: </h4>
+                                </div>
+                            </div>      
+                
+                        <section class="row"> 
+
+                       <div class="row d-flex justify-content-center align-items-center py-5 w-100">
+                          
+                    <div class="col-12 col-sm-12 col-md-8">
+                        
                         <div class="d-flex align-items-center equipe-desc">
                          <figure class="d-flex flex-column justify-content-center"> 
                              <img class="img-fluid img-tumbnail p-3 sobre-img" src="../assets/Isadora-foto.jpeg"> 
@@ -129,6 +177,7 @@
             
                     </div>
                 </div>
+                </section>
         </div> <!--FECHA CONTAINER -->
     </main>    
         
@@ -143,11 +192,11 @@
                     <div class="py-2" style="width: 50%;">
                         <h4 class="h6">LINKS UTEIS</h4>
                         <ul class="list-unstyled">
-                            <li><a href="" class="text-decoration-none" style="color: black;" disabled >HOME</a></li>
+                            <li><a href="../index.html" class="text-decoration-none" style="color: black;" disabled >HOME</a></li>
                             <li><a href="" class="text-decoration-none" style="color: black;">Planos</a></li>
-                            <li><a href="" class="text-decoration-none" style="color: black;">Login</a></li>
-                            <li><a href="" class="text-decoration-none" style="color: black;">Produtos</a></li>
-                            <li><a href="" class="text-decoration-none" style="color: black;">Inscreva-se</a></li>
+                            <li><a href="login.html" class="text-decoration-none" style="color: black;">Login</a></li>
+                            <li><a href="produto.html" class="text-decoration-none" style="color: black;">Produtos</a></li>
+                            <li><a href="form.html" class="text-decoration-none" style="color: black;">Inscreva-se</a></li>
                         </ul>
                     </div>
                 </div> 

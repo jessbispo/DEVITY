@@ -19,6 +19,44 @@ h2, h3 {
     font-family: 'Abril Fatface', 'roboto';
 }
 
+#empresa-session-um {
+    height: 80vh;
+}
+
+#linha-um-empresa {
+    background-color: #F0E2E7;
+}
+
+#empresa-desc-texto {
+    padding: 5%;
+    text-align: center;
+}
+
+#empresa-desc-img{
+    background-image: url("../assets/empresa-fundo.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100%;
+}
+
+
+#sessions-subtitulo {
+    font-family: "segoi ui", "roboto";
+    text-align: center;
+    border-bottom: 1px dotted gray;
+    border-width: thin;
+    font-size: 20px;
+    max-width: 150px;
+    margin: auto;
+    padding: 5px;
+    
+}
+
 .sobre-paragrafo {
     font-family: "segoi ui", "roboto";
     font-size: 20px;
@@ -56,6 +94,13 @@ h2, h3 {
 
 @media (max-width: 800px)
 {
+    #cont-session-um {
+        min-width: 100%!Important
+    }
+    
+    #img-session-um {
+        display:none!important;
+    }
     .equipe-desc
    {
        display: block!important;

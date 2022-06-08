@@ -45,7 +45,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="Jessica-foto.jpeg" width="100px;" alt="Foto Jessica"/><br>
+
+        <img src="assets/Jessica-foto.jpeg" width="100px;" alt="Foto Jessica"/><br>
+
         <sub>
           <b>Jessica Bispos</b>
         </sub>
@@ -53,7 +55,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="Kelly-foto.jpeg" alt="Foto Kelly"/><br>
+
+        <img src="assets/Kelly-foto.jpeg"  width="100px;" alt="Foto Kelly"/><br>
+
         <sub>
           <b>Kelly</b>
         </sub>
@@ -61,7 +65,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="Jaque-foto.jpeg" width="100px;" alt="Foto Jaque"/><br>
+
+        <img src="assets/Jaque-foto.jpeg" width="100px;" alt="Foto Jaque"/><br>
+        
         <sub>
           <b>Jaque</b>
         </sub>
@@ -69,7 +75,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
      <td align="center">
       <a href="#">
-        <img src="Isadora-foto.png" width="100px;" alt="Foto Isadora"/><br>
+
+        <img src="assets/Isadora-foto.png" width="100px;" alt="Foto Isadora"/><br>
+
         <sub>
           <b>Isadora</b>
         </sub>

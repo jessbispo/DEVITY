@@ -12,18 +12,17 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="../js/recuperar_senha.js" defer></script>
     
         <link href="../css/loginPage.css" rel="stylesheet"> <!-- Import do CSS -->
+        <link href="../css/recuperarSenhaPage.css" rel="stylesheet"> <!-- Import do CSS -->
    
-        <!-- Adicionando fonte -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
     </head>
 
     <body>
-    
- <!--barra de navegação-->
+  <!--barra de navegação-->
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'Abril Fatface', cursive;">
         <img id="logo" class="navbar-brand mx-0" src="../assets/logo.png" alt="logo" style="height: 80px; width: fit-content;" > <!--aqui vem o logo-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +33,7 @@
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
                 <a id="produtos" class="dropdown-item" href="produto.html">Produto</a>
-
                 <a id="planos" class="dropdown-item" href="#">Planos</a>
                 <a id="sobre" class="dropdown-item" href="sobre.html">Sobre Nós</a>
                 <div class="dropdown-divider"></div>
@@ -58,31 +55,60 @@
 
         
 <!-- MENU CARD -->
-    <main class="vh-100" id="login-session">
+    <main class="vh-100" id="login-session" style="background-color: #3f83e4;">
       <div class="container h-100 py-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card p-5" id="card-back">
+              
+            <div class="card p-5 position-relative" id="card-back">
+                <div class="alert alert-warning" id="msg-verifica">Email sendo verificado... <img src="../assets/loading.gif" style="width: 12px; height: 12px;"></div>
                 <div class="card-body h-75 d-flex flex-column justify-content-center align-items-center" id="login-card">
-                    <h2 class="card-title text-center"> Login </h2>
-                     <p class="card-title text-center"> Entre com email e senha: </p>
+                    <h2 class="card-title text-center"> Recuperar Senha: </h2>
                    
-                <form onsubmit="alert('Logado...');"  class="d-flex flex-column justify-content-center align-items-center">     
+                    <p class="card-title text-center"> Digite o email cadastrado: </p>
+
+                    <form onsubmit="MudaCard(event);" class="d-flex flex-column justify-content-center align-items-center"> 
                 <div class="form-outline p-2"> 
-                    <input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email no formato a@b.com" class="form-control" placeholder="Email" required>
+                    <input type="text" id="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email no formato a@b.com" required>
+                </div>
+                        
+                    <br>
+                   <input type="submit" class="btn btn-secundary btn-lg" value="Prosseguir"/>
+               
+                    </form>
+
+                
+                
+
+                </div>
+            </div>
+              
+              <!--Card escondido: alteração de senha -->
+              
+               <div class="card p-5 position-absolute fixed-top" id="card-alterar-senha">
+                <div class="card-body h-75 d-flex flex-column justify-content-center align-items-center" id="login-card">
+                    <div class="alert alert-success" id="msg-senha">Senha Alterada com Sucesso <img src="../assets/check.png" style="width: 12px; height: 12px;"></div>
+                    <h2 class="card-title text-center"> Alterar Senha: </h2>
+                     <p class="card-title text-center"> Digite uma nova senha: </p>
+                        
+                <form onsubmit="alteraSenha(event);" class="d-flex flex-column justify-content-center align-items-center">  
+                <div class="form-outline p-2"> 
+                    <input type="password" id="primeiraSenha" class="form-control" placeholder="Senha" pattern=".{8,}" title="Senha mínima de 8 caracteres" required>
                 </div>
 
                 <div class="form-outline p-2">
-                    <input type="password" id="senha" pattern=".{8,}" title="Senha mínima de 8 caracteres" class="form-control" placeholder="Senha" required>
+                    <input type="password" id="segundaSenha" class="form-control" placeholder="Confirmar Senha" pattern=".{8,}" title="Senha mínima de 8 caracteres" required>
                 </div>
+
                 <br>
-                  <button class="btn btn-secundary btn-lg" type="submit"> Login </button>
-                   </form>
-                <br>
-                    <p class="small">Esqueceu sua senha? <a href="recuperar-senha.html"> Clique aqui! </a></p>
-             
+                    <input type="submit" class="btn btn-secundary btn-lg" value="Alterar">
+               
+                </form>
+
                 </div>
             </div>
+              
+              
           </div>
         </div>
     </div>

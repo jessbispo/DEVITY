@@ -1,5 +1,3 @@
-//redirecionando botoes da pagina inicial 
-
 $('#newsletter').blur(function() {
     let testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
 
@@ -13,14 +11,10 @@ $('#newsletter').blur(function() {
 
 
 let botao = $('#assine').on('click',() => {
-  location.assign("pages/form.html")
-})
+    location.assign("form.html")
+  })
 
-let botaoPage = $('#assineBtn').on('click',() => {
-  location.assign("pages/form.html")
-})
-
-let logo = $('#logo').on('click',() => {
-  location.assign("index.html")
-})
-
+  let logo = $('#logo').on('click',() => {
+    location.assign("../index.html")
+  })
+  
