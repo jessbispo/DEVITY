@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap4.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <title>Projeto final</title>
+</head>
+<body>
+    <!--barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'Abril Fatface', cursive;">
+        <img id="logo" class="navbar-brand mx-0" src="../assets/logohomepage.png" alt="logo" style="height: 81px; width: fit-content;" > <!--aqui vem o logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="planos" class="dropdown-item" href="#">Planos</a>
+                <a id="sobre" class="dropdown-item" href="pages/sobre.html">Sobre Nós</a>
+                <div class="dropdown-divider"></div>
+                <a id="contato" class="dropdown-item" href="#">Contato</a> 
+                </div>
+                </li>
+            </ul>
+            <div>
+                 <ul class="navbar-nav d-flex gap-5 ">
+                    <li class="nav-item active">
+                        <a id="login" class="nav-link" href="pages/login.html">LOGIN</a>
+                    </li>
+
+                    <button id="assine" class="btn" style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;" type="submit"> ASSINE</button>
+
+                </ul>
+        
+            </div>
+        </div>
+    </nav>
+
+    <main class="">
+        <section class="text-center">
+            <h1 class="pt-5" style="font-family: 'Abril Fatface', cursive;">
+                PLANOS
+            </h1>
+        </section>
+        <section class="container py-5">
+            <div class="row ">
+                <div class="card col-sm mx-4">
+                <div class="card-header">
+                  MENSAL
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">R$29.90/mês</h5>
+                  <p class="card-text">Tenha acesso valido por 30 dias e conheça as vantagens do nosso leitor de tela.</p>
+                  <a href="./form.html" class="btn btn-primary" style="background-color: #B20D30 ;">MENSAL</a>
+                </div>
+              </div>
+
+              <div class="card col-sm mx-4">
+                <div class="card-header">
+                  ANUAL
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">R$19.90/mês</h5>
+                  <p class="card-text">Tenha acesso valido por 1 ano e conheça as vantagens do nosso leitor de tela.</p>
+                  <a href="./form.html" class="btn btn-primary" style="background-color: #B20D30 ;">ANUAL</a>
+                </div>
+              </div>
+
+              <div class="card col-sm mx-4">
+                <div class="card-header">
+                  CORPORATIVO
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">PLANO CORPORATIVO</h5>
+                  <p class="card-text">Oferta especial para empresas, nos mande um e-mail para checar orçamento.</p>
+                  <a href="https://gmail.com/" class="btn btn-primary" style="background-color: #B20D30 ;">Nos contate</a>
+                </div>
+              </div>
+            </div>
+            
+        </section>
+
+        
+
+    </main>
+    
+        <footer class="mx-0 px-0" style="background-color: #F0E2E7 ; color: black; ">
+            <div id="rodape" class="container py-5 text-center">
+                <div id="divisaoRodape" class="d-flex flex-wrap justify-content-center" style="font-size: 12px;">
+                    <div class="d-flex flex-" style="width: 500px;">
+                        <div class=" py-2" style="width: 50%;">
+                            <h4 class="h6">DEVITY</h4>
+                            <p  class="px-5">Nosso foco é prover uma solução efetiva e acessivel para desenvolvedores com algum tipo de deficiencia visual.</p>
+                        </div>
+                        <div class="py-2" style="width: 50%;">
+                            <h4 class="h6">LINKS UTEIS</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html" style="color: black;">HOME</a></li>
+                                <li><a href="" style="color: black;" >Produtos</a></li> <!--kelly-->
+                                <li><a href="" style="color: black;" >Planos</a></li> <!--kelly-->
+                                <li><a href="pages/login.html" style="color: black;" >Login</a></li>
+                                <li><a href="pages/form.html" style="color: black;" >Inscreva-se</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+
+                    <div class="d-flex"  style="width: 500px;">
+                        <div class="" style="width: 50%;">
+                            <h4 class="h6 py-2">CONTATO</h4>
+                            <ul class="list-unstyled">
+                                <li><a class="link-dark" style="color: black;">devity.com</a></li>
+                                <li><a href="https://gmail.com/" class="link-dark" style="color: black;">devity@resilia.com</a></li>
+                                <li><a style="color: black;">fale conosco: (82) 3156-2569 </a></li> <!--adicionar numero-->
+                            </ul>
+                        </div>
+                        <div style="width: 50%;"> 
+                            <form>
+                                <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                                <input class="py-1" id="newsletter" type="text " name="newsletter" placeholder="seu email">
+                                <button class="py-1" style="background-color: #BE0E34; color:#F0E2E7; border: none;">assinar</button>
+                            </form>
+                           
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="text-center" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+                <p class="text-center m-0 pb-2"> TODOS OS DIREITOS RESERVADOS @ DEVITY</p>
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript" src="../js/homepage.js" defer></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.js" defer"></script>
+    <script type="text/javascript" src="../js/popper.min.js" defer></script> 
+    <script type="text/javascript" src="../js/bootstrap.js" defer></script>
+</body>
+</html>
