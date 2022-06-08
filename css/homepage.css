@@ -1,7 +1,9 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* @font-face {
     font-family: 'abril fatface';
     src: url("/fonts/AbrilFatface-Regular.ttf");
-}
+} */
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
