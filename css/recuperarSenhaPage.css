@@ -1,0 +1,17 @@
+#card-alterar-senha {
+    visibility:hidden;
+}
+
+#msg-verifica {
+    visibility:hidden;
+    font-family: "segoi ui", "roboto";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#msg-senha {
+    visibility:hidden;
+    font-family: "segoi ui", "roboto";
+    text-transform: uppercase;
+    text-align: center;
+}

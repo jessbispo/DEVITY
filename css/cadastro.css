@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: #C17817;
+}
+
+.fonte {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.fonte-segoi {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alerta,
+.alert-submit {
+    position: fixed;
+    top: 1rem;
+    right: 20%;
+    color: black;
+}

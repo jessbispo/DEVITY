@@ -1,0 +1,163 @@
+<html>
+    
+    <head>
+    
+        <title> Projeto Final </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="../js/recuperar_senha.js" defer></script>
+    
+        <link href="../css/loginPage.css" rel="stylesheet"> <!-- Import do CSS -->
+        <link href="../css/recuperarSenhaPage.css" rel="stylesheet"> <!-- Import do CSS -->
+   
+    
+    </head>
+
+    <body>
+  <!--barra de navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F0E2E7; font-family: 'Abril Fatface', cursive;">
+        <img id="logo" class="navbar-brand mx-0" src="../assets/logo.png" alt="logo" style="height: 80px; width: fit-content;" > <!--aqui vem o logo-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="produtos" class="dropdown-item" href="produto.html">Produto</a>
+                <a id="planos" class="dropdown-item" href="#">Planos</a>
+                <a id="sobre" class="dropdown-item" href="sobre.html">Sobre Nós</a>
+                <div class="dropdown-divider"></div>
+                <a id="contato" class="dropdown-item" href="#">Contato</a>
+                </div>
+                </li>
+            </ul>
+            <div>
+                 <ul class="navbar-nav d-flex gap-5 ">
+                    <li class="nav-item active">
+                        <a id="login" class="nav-link" href="login.html">LOGIN</a>
+                    </li>
+                     <button id="assine" class="btn" style="border-radius: 20px;background-color: #171810; border-color: black; color: #F0E2E7;;"  type="submit">ASSINE</button> 
+                </ul>
+        
+            </div>
+        </div>
+    </nav>
+
+        
+<!-- MENU CARD -->
+    <main class="vh-100" id="login-session" style="background-color: #3f83e4;">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              
+            <div class="card p-5 position-relative" id="card-back">
+                <div class="alert alert-warning" id="msg-verifica">Email sendo verificado... <img src="../assets/loading.gif" style="width: 12px; height: 12px;"></div>
+                <div class="card-body h-75 d-flex flex-column justify-content-center align-items-center" id="login-card">
+                    <h2 class="card-title text-center"> Recuperar Senha: </h2>
+                   
+                    <p class="card-title text-center"> Digite o email cadastrado: </p>
+
+                    <form onsubmit="MudaCard(event);" class="d-flex flex-column justify-content-center align-items-center"> 
+                <div class="form-outline p-2"> 
+                    <input type="text" id="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Email no formato a@b.com" required>
+                </div>
+                        
+                    <br>
+                   <input type="submit" class="btn btn-secundary btn-lg" value="Prosseguir"/>
+               
+                    </form>
+
+                
+                
+
+                </div>
+            </div>
+              
+              <!--Card escondido: alteração de senha -->
+              
+               <div class="card p-5 position-absolute fixed-top" id="card-alterar-senha">
+                <div class="card-body h-75 d-flex flex-column justify-content-center align-items-center" id="login-card">
+                    <div class="alert alert-success" id="msg-senha">Senha Alterada com Sucesso <img src="../assets/check.png" style="width: 12px; height: 12px;"></div>
+                    <h2 class="card-title text-center"> Alterar Senha: </h2>
+                     <p class="card-title text-center"> Digite uma nova senha: </p>
+                        
+                <form onsubmit="alteraSenha(event);" class="d-flex flex-column justify-content-center align-items-center">  
+                <div class="form-outline p-2"> 
+                    <input type="password" id="primeiraSenha" class="form-control" placeholder="Senha" pattern=".{8,}" title="Senha mínima de 8 caracteres" required>
+                </div>
+
+                <div class="form-outline p-2">
+                    <input type="password" id="segundaSenha" class="form-control" placeholder="Confirmar Senha" pattern=".{8,}" title="Senha mínima de 8 caracteres" required>
+                </div>
+
+                <br>
+                    <input type="submit" class="btn btn-secundary btn-lg" value="Alterar">
+               
+                </form>
+
+                </div>
+            </div>
+              
+              
+          </div>
+        </div>
+    </div>
+    </main>
+
+
+   <footer class="mx-0 px-0 text-center" style="background-color: #F0E2E7; color: black;">
+        <div id="rodape" class="container py-5">
+            <div id="divisaoRodape" class="d-flex flex-wrap justify-content-center" style="font-size: 12px;">
+                <div class="d-flex flex-wrap" style="width: 500px;">
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">DEVITY</h4>
+                        <p class="d-flex justify-content-center px-5">Nosso foco é prover uma solução efetiva e acessivel para desenvolvedores com algum tipo de deficiencia visual.</p>
+                    </div>
+                    <div class="py-2" style="width: 50%;">
+                        <h4 class="h6">LINKS UTEIS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="../index.html" class="text-decoration-none" style="color: black;" disabled >HOME</a></li>
+                            <li><a href="planos.html" class="text-decoration-none" style="color: black;">Planos</a></li>
+                            <li><a href="login.html" class="text-decoration-none" style="color: black;">Login</a></li>
+                            <li><a href="produto.html" class="text-decoration-none" style="color: black;">Produtos</a></li>
+                            <li><a href="form.html" class="text-decoration-none" style="color: black;">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+                </div> 
+
+                <div class="d-flex"  style="width: 500px;">
+                    <div class="" style="width: 50%;">
+                        <h4 class="h6 py-2">CONTATO</h4>
+                        <ul class="list-unstyled">
+                            <li><a style="color: black;">devity</a></li>
+                            <li><a href="https://gmail.com/" class="link-dark" style="color: black;">devity@resilia.com</a></li>
+                            <li><a style="color: black;">fale conosco: (82) 3156-2569</a></li> 
+                        </ul>
+                    </div>
+                    <div style="width: 50%;"> 
+                        <form>
+                            <h4 class="h6 py-2">ASSINE A NEWSLETTER</h4>   
+                            <input class="py-1 px-1" id="newsletter" type="text " name="newsletter" placeholder="seu email">
+                            <button class="px-2 py-1" style="color:#000000; border: none; background-color: #B20D30;">assinar</button>
+                        </form>
+                       
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="text-center" style="background-color: #F0E2E7; color: black; font-size: small; font-weight: bold;">
+            <p class="text-center m-0 py-2">TODOS OS DIREITOS RESERVADOS @DEVITY</p>
+        </div>
+    </footer>
+</body>
+</html>
