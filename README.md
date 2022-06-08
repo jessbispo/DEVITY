@@ -10,7 +10,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/jessbispo/PROJETO-FINAL?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/jessbispo/PROJETO-FINAL?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="assets/homepage.png" alt="imagem">
 
 > Projeto final do módulo 2, em que utilizamos jQuery, Javascript, Bootstrap e request em API para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia..
 
