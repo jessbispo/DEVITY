@@ -1,4 +1,4 @@
-# PROJETO-FINAL
+# DEVITY
 
 
 
@@ -12,7 +12,7 @@
 
 <img src="assets/homepage.png" alt="imagem">
 
-> Projeto final do módulo 2, em que utilizamos jQuery, Javascript, Bootstrap e request em API para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia..
+> Projeto final do módulo 2, em que utilizamos HTML, CSS, Javascript, jQuery, Bootstrap e API's para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia, e a nossa escolha de produto foi um leitor de tela próprio para o mundo da programação, 
 
 <br>
 
