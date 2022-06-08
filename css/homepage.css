@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* @font-face {
+    font-family: 'abril fatface';
+    src: url("/fonts/AbrilFatface-Regular.ttf");
+} */
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+
+@media screen and (min-width: 990px) {
+  #assine {
+      width: 10vw;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    #rodape {
+        height: fit-content;
+    }
+
+    #assineBtn {
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    #carrosel {
+        height: 550px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    #carrosel {
+        height: 700px;
+    }
+    #assineBtn {
+        width: 20vw;
+        background-color: aliceblue;
+    }
+  }
+
+
+
+  

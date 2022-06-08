@@ -1,4 +1,5 @@
-# PROJETO-FINAL
+# DEVITY
+
 
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
@@ -9,9 +10,9 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/jessbispo/PROJETO-FINAL?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/jessbispo/PROJETO-FINAL?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="assets/homepage.png" alt="imagem">
 
-> Projeto final do módulo 2, em que utilizamos jQuery, Javascript, Bootstrap e request em API para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia..
+> Projeto final do módulo 2, em que utilizamos HTML, CSS, Javascript, jQuery, Bootstrap e API's para realizarmos a criação de um site sobre um produto que faciitaria o mundo da tecnologia, e a nossa escolha de produto foi um leitor de tela próprio para o mundo da programação, 
 
 <br>
 
@@ -44,7 +45,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="" width="100px;" alt="Foto Jessica"/><br>
+        <img src="assets/jessica.jfif" width="100px;" alt="Foto Jessica"/><br>
         <sub>
           <b>Jessica Bispos</b>
         </sub>
@@ -68,7 +69,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
      <td align="center">
       <a href="#">
-        <img src="" width="100px;" alt="Foto Isadora"/><br>
+        <img src="assets/isadora.jfif" width="100px;" alt="Foto Isadora"/><br>
         <sub>
           <b>Isadora</b>
         </sub>
@@ -90,8 +91,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## **Se conecte com os colaboradores**;  
 
 - [Jessica Bispo](https://github.com/jessbispo)
-- [Jaque](https://github.com/jackiesantos)
+- [Jaque](https://github.com/Jackiesants)
 - [Kelly](https://github.com/kellysanttos)
-- [Isadora](https://github.com/isadora)
+- [Isadora](https://github.com/isadoraraujo)
 
 
