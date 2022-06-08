@@ -20,7 +20,6 @@
     height: auto;
     width: 680px;
     margin-left: -60px;
-    
 }
 
 .products-text {
@@ -87,7 +86,7 @@
 
 header {
     color: #b20d30;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,12 +119,7 @@ header {
     padding: 0.3rem;
 }
 
-.circle {
-    background-color: #fff;
-    height: 1.4rem;
-    width: 1.4rem;
-    border-radius: 50%;
-}
+
 
 .checkbox:checked + .sub {
     justify-content: flex-end;
@@ -171,7 +165,7 @@ header {
     margin-bottom: 10px;
 }
 
-ul li.price {
+#basic {
     font-size: 3rem;
     color: hsl(233, 10%, 65%);
     padding-bottom: 2rem;
@@ -214,5 +208,6 @@ ul li.price {
 }
 
 .pack {
-    font-size: 1.1rem;
+    margin-left: -25px;
+    font-size: 1.7rem;
 }
