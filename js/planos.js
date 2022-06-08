@@ -9,6 +9,11 @@ $('#newsletter').blur(function() {
     }
 });
 
+let btn = $('#btnProduto').on('click',() => {
+  location.assign("form.html")
+})
+ 
+
 
 let botao = $('#assine').on('click',() => {
     location.assign("form.html")
