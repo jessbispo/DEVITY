@@ -94,6 +94,13 @@ h2, h3 {
 
 @media (max-width: 800px)
 {
+    #cont-session-um {
+        min-width: 100%!Important
+    }
+    
+    #img-session-um {
+        display:none!important;
+    }
     .equipe-desc
    {
        display: block!important;
