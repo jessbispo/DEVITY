@@ -11,6 +11,7 @@ $('#newsletter').blur(function() {
     }
 });
 
+
 let botao = $('#assine').on('click',() => {
   location.assign("pages/form.html")
 })
@@ -22,3 +23,4 @@ let botaoPage = $('#assineBtn').on('click',() => {
 let logo = $('#logo').on('click',() => {
   location.assign("index.html")
 })
+
